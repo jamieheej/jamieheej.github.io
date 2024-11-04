@@ -1,2 +1,18 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<div class="profile-container">
+	<img src="/images/pottery.jpg" alt="Profile" class="profile-image" />
+</div>
+
+<style>
+	.profile-container {
+		display: flex;
+		justify-content: center;
+		padding: 2rem 0;
+	}
+
+	.profile-image {
+		width: 300px; /* Add a specific width */
+		height: 300px; /* Add a specific height */
+		object-fit: cover;
+		border-radius: 4px; /* Optional: adds rounded corners */
+	}
+</style>
