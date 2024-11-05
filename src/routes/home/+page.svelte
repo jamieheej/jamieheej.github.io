@@ -1,5 +1,5 @@
 <div class="profile-container">
-	<img src="pottery.jpg" alt="Profile" class="profile-image" />
+	<img src="/images/pottery.jpg" alt="Profile" class="profile-image" />
 </div>
 
 <style>
