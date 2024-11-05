@@ -1,7 +1,11 @@
+<script>
+	import { base } from '$app/paths';
+</script>
+
 <div class="about-container">
 	<div class="profile-section">
 		<div class="profile-photo">
-			<img src="/images/me.jpg" alt="Jamie Sim" />
+			<img src="{base}/images/me.jpg" alt="Jamie Sim" />
 		</div>
 
 		<div class="profile-content">

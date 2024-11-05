@@ -1,5 +1,9 @@
+<script>
+	import { base } from '$app/paths';
+</script>
+
 <div class="profile-container">
-	<img src="/images/pottery.jpg" alt="Profile" class="profile-image" />
+	<img src="{base}/images/pottery.jpeg" alt="Profile" class="profile-image" />
 </div>
 
 <style>
