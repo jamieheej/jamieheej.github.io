@@ -7,10 +7,11 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-			// Set fallback to index.html to handle client-side routing
-			fallback: 'index.html',
-			// Set strict mode to false to ignore prerendering warnings
-			strict: false
+			pages: 'build',
+			assets: 'build',
+			fallback: undefined,
+			precompress: false,
+			strict: true
 		}),
 		paths: {
 			base: process.env.NODE_ENV === 'production' ? '/jamieheej.github.io' : ''
