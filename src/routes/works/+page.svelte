@@ -1,7 +1,11 @@
+<script>
+	import { base } from '$app/paths';
+</script>
+
 <div class="works-container">
 	<div class="header">
 		<h1>Professional Experience</h1>
-		<a href="/resume.pdf" download class="download-btn">
+		<a href="{base}/resume.pdf" download class="download-btn">
 			Download Resume
 			<span class="download-icon">↓</span>
 		</a>
