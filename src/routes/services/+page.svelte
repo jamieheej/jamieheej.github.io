@@ -1,3 +1,7 @@
+<script>
+	import { base } from '$app/paths';
+</script>
+
 <div class="services-container">
 	<h1>Services</h1>
 
@@ -8,7 +12,12 @@
 		crafting responsive web applications, producing engaging marketing materials, facilitating clear
 		communication in medical settings, and ensuring accurate translations and cultural adaptations.
 	</p>
-	<img src="images/painter.jpeg" alt="service-image" class="service-image" aria-hidden="true" />
+	<img
+		src="{base}/images/painter.jpeg"
+		alt="service-image"
+		class="service-image"
+		aria-hidden="true"
+	/>
 
 	<div class="cta-section">
 		<a href="mailto:jamieheejinsim@gmail.com" class="cta-button email">Get in Touch</a>
