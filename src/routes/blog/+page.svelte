@@ -8,6 +8,7 @@
 			class="medium-link">Medium</a
 		>
 	</p>
+	<img class="blog-image" src="/images/water.jpeg" alt="blog-image" aria-hidden="true" />
 </div>
 
 <style>
@@ -19,14 +20,15 @@
 	}
 
 	h1 {
-		font-size: 2.5rem;
-		color: #2d3748;
-		margin-bottom: 1rem;
+		font-size: 80px;
+		font-weight: 300;
+		margin-bottom: 0.5rem;
+		text-align: center;
 	}
 
 	.description {
-		color: #4a5568;
-		font-size: 1.2rem;
+		font-size: 24px;
+		font-weight: 300;
 	}
 
 	.medium-link {
@@ -38,5 +40,11 @@
 
 	.medium-link:hover {
 		color: #718096;
+	}
+
+	.blog-image {
+		width: 100%;
+		max-width: 600px;
+		height: auto;
 	}
 </style>

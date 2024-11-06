@@ -4,19 +4,38 @@
 
 <div class="profile-container">
 	<img src="{base}/images/pottery.jpeg" alt="Profile" class="profile-image" />
+	<div class="profile-text">
+		<a href="https://www.heejinsim.com">www.heejinsim.com</a>
+		<a href="mailto:jamieheejinsim@gmail.com">jamieheejinsim@gmail.com</a>
+		<a href="https://www.instagram.com/jamierereads">@jamierereads</a>
+	</div>
 </div>
 
 <style>
 	.profile-container {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 		padding: 2rem 0;
 	}
 
 	.profile-image {
-		width: 500px; /* Add a specific width */
-		height: auto; /* Add a specific height */
+		width: 500px;
+		height: auto;
 		object-fit: cover;
-		border-radius: 4px; /* Optional: adds rounded corners */
+		border-radius: 4px;
+	}
+
+	.profile-text {
+		display: flex;
+		gap: 4rem;
+		font-size: 18px;
+		font-weight: 200;
+		margin-top: 2rem;
+		a {
+			text-decoration: none;
+			color: black;
+		}
 	}
 </style>
