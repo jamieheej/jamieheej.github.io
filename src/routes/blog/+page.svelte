@@ -1,3 +1,7 @@
+<script>
+	import { base } from '$app/paths'; // Specify the correct module
+</script>
+
 <div class="blog-container">
 	<h1>Blog</h1>
 	<p class="description">
@@ -8,7 +12,7 @@
 			class="medium-link">Medium</a
 		>
 	</p>
-	<img class="blog-image" src="/images/water.jpeg" alt="blog-image" aria-hidden="true" />
+	<img class="blog-image" src="{base}/images/water.jpeg" alt="blog-image" aria-hidden="true" />
 </div>
 
 <style>

@@ -98,11 +98,6 @@
 		margin-bottom: 0.5rem;
 	}
 
-	h2 {
-		font-size: 1.5rem;
-		margin-bottom: 2rem;
-	}
-
 	p {
 		font-size: 24px;
 		font-style: italic;
