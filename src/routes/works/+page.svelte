@@ -4,16 +4,13 @@
 
 <div class="works-container">
 	<div class="header">
-		<h1>Professional Experience</h1>
-		<a href="{base}/resume.pdf" download class="download-btn">
-			Download Resume
-			<span class="download-icon">↓</span>
-		</a>
+		<h1>Works</h1>
+		<a href="{base}/resume.pdf" download class="download-btn"> Download Resume </a>
 	</div>
 
 	<div class="timeline">
 		<div class="work-item">
-			<div class="work-date">Remote</div>
+			<div class="work-date">June 2024 -</div>
 			<div class="work-content">
 				<h3>Korean Interpreter</h3>
 				<div class="company">Kelly Services – Canada</div>
@@ -85,12 +82,24 @@
 		max-width: 1200px;
 		margin: 0 auto;
 		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	h1 {
-		font-size: 2.5rem;
-		color: #2d3748;
-		margin-bottom: 2rem;
+		font-size: 80px;
+		font-weight: 300;
+		margin-bottom: 0.5rem;
+		text-align: center;
 	}
 
 	.timeline {
@@ -104,10 +113,10 @@
 		grid-template-columns: 150px 1fr;
 		gap: 2rem;
 		padding: 1.5rem;
-		background: white;
-		border-radius: 8px;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		background: transparent;
+		border: 1px solid black;
 		transition: transform 0.2s ease;
+		font-size: 18px;
 	}
 
 	.work-item:hover {
@@ -116,17 +125,15 @@
 
 	.work-date {
 		font-weight: 500;
-		color: #4a5568;
 	}
 
 	.work-content h3 {
 		font-size: 1.2rem;
-		color: #2d3748;
+		font-weight: 500;
 		margin-bottom: 0.5rem;
 	}
 
 	.company {
-		color: #4a5568;
 		margin-bottom: 1rem;
 		font-weight: 500;
 	}
@@ -140,28 +147,15 @@
 
 	.download-btn {
 		display: inline-flex;
-		align-items: center;
+		align-self: flex-end;
 		gap: 0.5rem;
-		background: #2d3748;
-		color: white;
+		color: black;
 		padding: 0.75rem 1.5rem;
-		border-radius: 6px;
-		text-decoration: none;
-		font-weight: 500;
-		transition: all 0.2s ease;
-	}
-
-	.download-btn:hover {
-		background: #4a5568;
-		transform: translateY(-2px);
-	}
-
-	.download-icon {
-		font-size: 1.2rem;
+		font-size: 24px;
+		font-weight: 300;
 	}
 
 	.description {
-		color: #4a5568;
 		line-height: 1.8;
 		margin-top: 1rem;
 	}
