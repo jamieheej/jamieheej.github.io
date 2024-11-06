@@ -1,55 +1,16 @@
 <div class="services-container">
 	<h1>Services</h1>
 
-	<div class="services-grid">
-		<div class="service-card">
-			<h2>Web Development</h2>
-			<ul>
-				<li>Responsive web applications</li>
-				<li>Frontend development with React and Next.js</li>
-				<li>Backend integration with Node.js and MongoDB</li>
-				<li>Custom web solutions</li>
-				<li>Performance optimization</li>
-			</ul>
-		</div>
-
-		<div class="service-card">
-			<h2>UX Writing & Content</h2>
-			<ul>
-				<li>Landing page copywriting</li>
-				<li>Marketing materials</li>
-				<li>User interface text</li>
-				<li>Product descriptions</li>
-				<li>Technical documentation</li>
-			</ul>
-		</div>
-
-		<div class="service-card">
-			<h2>Interpretation Services</h2>
-			<ul>
-				<li>Medical interpretation</li>
-				<li>Healthcare setting expertise</li>
-				<li>Real-time communication</li>
-				<li>Cultural mediation</li>
-				<li>Professional documentation</li>
-			</ul>
-		</div>
-
-		<div class="service-card">
-			<h2>Translation & Localization</h2>
-			<ul>
-				<li>Document translation</li>
-				<li>Website localization</li>
-				<li>Marketing content adaptation</li>
-				<li>Technical translation</li>
-				<li>Quality assurance</li>
-			</ul>
-		</div>
-	</div>
+	<p>
+		I am a versatile professional offering a range of services including <u>web development</u>,
+		<u>UX writing</u>
+		and content creation, interpretation services, and translation and localization. My expertise encompasses
+		crafting responsive web applications, producing engaging marketing materials, facilitating clear
+		communication in medical settings, and ensuring accurate translations and cultural adaptations.
+	</p>
+	<img src="images/painter.jpeg" alt="service-image" class="service-image" aria-hidden="true" />
 
 	<div class="cta-section">
-		<h2>Ready to Work Together?</h2>
-		<p>Let's create solutions that combine technical excellence with clear communication.</p>
 		<a href="mailto:jamieheejinsim@gmail.com" class="cta-button email">Get in Touch</a>
 	</div>
 </div>
@@ -59,51 +20,24 @@
 		max-width: 1200px;
 		margin: 0 auto;
 		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	h1 {
-		font-size: 2.5rem;
-		color: #2d3748;
-		margin-bottom: 2rem;
+		font-size: 80px;
+		font-weight: 300;
+		margin-bottom: 0.5rem;
 		text-align: center;
 	}
 
-	.services-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		gap: 2rem;
-		margin-bottom: 4rem;
-	}
-
-	.service-card {
-		background: #ffffff;
-		padding: 2rem;
-		border-radius: 8px;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-	}
-
-	.service-card h2 {
-		font-size: 1.5rem;
-		color: #4a5568;
-		margin-bottom: 1rem;
-	}
-
-	.service-card ul {
-		list-style: none;
-		padding: 0;
-	}
-
-	.service-card li {
-		margin-bottom: 0.5rem;
-		padding-left: 1.5rem;
-		position: relative;
-	}
-
-	.service-card li:before {
-		content: '•';
-		position: absolute;
-		left: 0;
-		color: #4a5568;
+	p {
+		font-size: 24px;
+		font-style: italic;
+		font-weight: 300;
+		line-height: 1.6;
 	}
 
 	.cta-section {
@@ -111,35 +45,27 @@
 		padding: 3rem 0;
 	}
 
-	.cta-section h2 {
-		font-size: 2rem;
-		color: #2d3748;
-		margin-bottom: 1rem;
-	}
-
-	.cta-section p {
-		margin-bottom: 2rem;
-		color: #4a5568;
-	}
-
 	.cta-button {
 		display: inline-block;
-		background: #4a5568;
-		color: white;
+		background: transparent;
+		color: #000000;
 		padding: 1rem 2rem;
+		border: none;
 		border-radius: 4px;
-		text-decoration: none;
-		font-weight: 500;
-		transition: background 0.3s ease;
+		text-decoration: underline;
+		font-size: 24px;
+		font-weight: 300;
+		transition: border 0.3s ease;
 	}
 
 	.cta-button:hover {
-		background: #2d3748;
+		border: black;
 	}
 
-	@media (max-width: 768px) {
-		.services-grid {
-			grid-template-columns: 1fr;
-		}
+	.service-image {
+		width: 500px; /* Adjust the width as needed */
+		height: auto; /* Maintain aspect ratio */
+		margin-left: 1rem; /* Space between the heading and the image */
+		vertical-align: middle; /* Align the image vertically with the text */
 	}
 </style>

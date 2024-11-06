@@ -3,18 +3,36 @@
 </script>
 
 <nav>
-	<ul>
-		<li><a href="{base}/about">About</a></li>
-		<li><a href="{base}/services">Services</a></li>
-		<li><a href="{base}/works">Works</a></li>
-		<li><a href="{base}/blog">Blog</a></li>
-	</ul>
+	<div class="nav-content">
+		<span class="logo">heejin</span>
+		<ul>
+			<li><a href="{base}/">Home</a></li>
+			<li><a href="{base}/about">About</a></li>
+			<li><a href="{base}/services">Services</a></li>
+			<li><a href="{base}/works">Works</a></li>
+			<li><a href="{base}/blog">Blog</a></li>
+		</ul>
+	</div>
 </nav>
 
 <style>
 	nav {
 		padding: 1rem;
 		background-color: transparent;
+		display: flex;
+		justify-content: center;
+	}
+
+	.nav-content {
+		display: flex;
+		align-items: center;
+		gap: 4rem;
+	}
+
+	.logo {
+		font-family: 'Petit Formal Script', cursive;
+		font-size: 3rem;
+		color: #333;
 	}
 
 	ul {
@@ -22,7 +40,11 @@
 		padding: 0;
 		margin: 0;
 		display: flex;
-		gap: 1rem;
+		gap: 4rem;
+		li {
+			font-size: 18px;
+			font-weight: 200;
+		}
 	}
 
 	a {

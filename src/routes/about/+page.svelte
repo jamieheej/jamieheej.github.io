@@ -4,25 +4,19 @@
 
 <div class="about-container">
 	<div class="profile-section">
-		<div class="profile-photo">
-			<img src="{base}/images/me.jpg" alt="Jamie Sim" />
-		</div>
-
 		<div class="profile-content">
-			<h1>Jamie Heejin Sim</h1>
-			<h2>Web Developer | UX Writer | Interpreter | Translator</h2>
-
+			<h3>About</h3>
 			<div class="bio-section">
 				<p>
 					With 3 years of experience in frontend development, I specialize in creating responsive
 					and user-friendly web applications. My technical expertise includes:
+					<span class="tech-stack">
+						<span>React</span>
+						<span>Next.js</span>
+						<span>MongoDB</span>
+						<span>NodeJS</span>
+					</span>
 				</p>
-				<ul class="tech-stack">
-					<li>React</li>
-					<li>Next.js</li>
-					<li>MongoDB</li>
-					<li>NodeJS</li>
-				</ul>
 
 				<p>
 					Beyond coding, I work as an interpreter, primarily in medical settings, bridging
@@ -46,6 +40,9 @@
 				</p>
 			</div>
 		</div>
+		<div class="profile-photo">
+			<img src="{base}/images/me.jpg" alt="Jamie Sim" />
+		</div>
 	</div>
 </div>
 
@@ -59,13 +56,23 @@
 	.profile-section {
 		display: flex;
 		gap: 3rem;
+		display: flex;
+		flex-direction: column;
 		align-items: center;
+		justify-content: center;
+	}
+
+	.profile-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.profile-photo {
 		flex-shrink: 0;
-		width: 300px;
-		height: 300px;
+		width: 400px;
+		height: 500px;
 		overflow: hidden;
 	}
 
@@ -79,37 +86,32 @@
 		flex: 1;
 	}
 
-	h1 {
-		font-size: 2.5rem;
+	.tech-stack {
+		display: flex;
+		gap: 1rem;
+		text-decoration: underline;
+	}
+
+	h3 {
+		font-size: 80px;
+		font-weight: 300;
 		margin-bottom: 0.5rem;
-		color: #2d3748;
 	}
 
 	h2 {
 		font-size: 1.5rem;
-		color: #4a5568;
 		margin-bottom: 2rem;
+	}
+
+	p {
+		font-size: 24px;
+		font-style: italic;
+		font-weight: 300;
 	}
 
 	.bio-section {
 		line-height: 1.6;
 	}
-
-	.tech-stack {
-		display: flex;
-		gap: 1rem;
-		list-style: none;
-		padding: 0;
-		margin: 1rem 0;
-	}
-
-	.tech-stack li {
-		background: #e2e8f0;
-		padding: 0.5rem 1rem;
-		border-radius: 4px;
-		font-weight: 500;
-	}
-
 	@media (max-width: 768px) {
 		.profile-section {
 			flex-direction: column;
