@@ -47,4 +47,19 @@
 		max-width: 600px;
 		height: auto;
 	}
+
+	@media (max-width: 375px) {
+		h1 {
+			font-size: 36px;
+		}
+
+		.description {
+			font-size: 16px;
+		}
+
+		.blog-image {
+			width: 100%;
+			max-width: none;
+		}
+	}
 </style>
