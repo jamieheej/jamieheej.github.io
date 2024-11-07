@@ -56,7 +56,6 @@
 	.profile-section {
 		display: flex;
 		gap: 3rem;
-		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
@@ -112,6 +111,7 @@
 	.bio-section {
 		line-height: 1.6;
 	}
+
 	@media (max-width: 768px) {
 		.profile-section {
 			flex-direction: column;
@@ -121,6 +121,20 @@
 		.profile-photo {
 			width: 250px;
 			height: 250px;
+		}
+	}
+
+	@media (max-width: 375px) {
+		h3 {
+			font-size: 36px;
+		}
+
+		p {
+			font-size: 16px;
+		}
+
+		.tech-stack span {
+			font-size: 14px;
 		}
 	}
 </style>

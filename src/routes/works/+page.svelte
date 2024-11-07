@@ -138,13 +138,6 @@
 		font-weight: 500;
 	}
 
-	.header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 3rem;
-	}
-
 	.download-btn {
 		display: inline-flex;
 		align-self: flex-end;
@@ -166,10 +159,32 @@
 			gap: 1rem;
 			text-align: center;
 		}
+	}
 
-		.download-btn {
-			width: 100%;
-			justify-content: center;
+	@media (max-width: 375px) {
+		h1 {
+			font-size: 36px; /* Adjusted font size for smaller screens */
+		}
+
+		.work-item {
+			grid-template-columns: 1fr; /* Stack items vertically */
+			padding: 1rem; /* Reduced padding */
+		}
+
+		.work-content h3 {
+			font-size: 1.5rem; /* Adjusted font size for headings */
+		}
+
+		.work-date {
+			font-size: 16px; /* Adjusted font size for dates */
+		}
+
+		.company {
+			font-size: 16px; /* Adjusted font size for company names */
+		}
+
+		.description {
+			font-size: 16px; /* Adjusted font size for descriptions */
 		}
 	}
 </style>
