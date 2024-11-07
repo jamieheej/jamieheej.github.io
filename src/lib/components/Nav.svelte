@@ -55,4 +55,30 @@
 	a:hover {
 		color: #666;
 	}
+
+	/* Mobile responsiveness */
+	@media (max-width: 768px) {
+		.nav-content {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		ul {
+			width: 100%;
+			flex-direction: column;
+			align-items: center;
+			gap: 1rem;
+		}
+
+		.logo {
+			font-size: 2rem; /* Adjust logo size for mobile */
+		}
+	}
+
+	@media (min-width: 375px) and (max-width: 768px) {
+		/* Additional styles for min viewport width of 375px */
+		.nav-content {
+			gap: 2rem; /* Adjust gap for better spacing */
+		}
+	}
 </style>

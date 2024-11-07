@@ -21,7 +21,8 @@
 	}
 
 	.profile-image {
-		width: 500px;
+		width: 100%;
+		max-width: 500px;
 		height: auto;
 		object-fit: cover;
 		border-radius: 4px;
@@ -36,6 +37,14 @@
 		a {
 			text-decoration: none;
 			color: black;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.profile-text {
+			flex-direction: column;
+			gap: 1rem;
+			text-align: center;
 		}
 	}
 </style>

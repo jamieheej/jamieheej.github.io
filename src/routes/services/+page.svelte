@@ -72,9 +72,25 @@
 	}
 
 	.service-image {
-		width: 500px; /* Adjust the width as needed */
+		width: 100%; /* Make image responsive */
+		max-width: 500px; /* Set a max width similar to the about page */
 		height: auto; /* Maintain aspect ratio */
-		margin-left: 1rem; /* Space between the heading and the image */
+		margin-left: 0; /* Remove margin for mobile */
 		vertical-align: middle; /* Align the image vertically with the text */
+	}
+
+	@media (max-width: 375px) {
+		h1 {
+			font-size: 36px;
+		}
+
+		p {
+			font-size: 16px;
+		}
+
+		.service-image {
+			width: 100%;
+			max-width: none;
+		}
 	}
 </style>
