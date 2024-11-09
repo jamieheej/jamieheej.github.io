@@ -161,7 +161,7 @@
 		}
 	}
 
-	@media (max-width: 375px) {
+	@media (max-width: 768px) {
 		h1 {
 			font-size: 36px; /* Adjusted font size for smaller screens */
 		}
